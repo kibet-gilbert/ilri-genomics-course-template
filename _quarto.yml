@@ -13,7 +13,16 @@ project:
     - materials/*
     - "!materials/*/no_render"
 
-format: crit-format-html
+format: 
+  html:
+    theme: [default, _extensions/ilrigenomics/ilri-format/theme.scss]
+    toc: true
+    number-sections: true
+    number-depth: 3
+    code-link: true
+    code-copy: true
+    lightbox: true
+
 filters:
   - callout-exercise
 
@@ -32,29 +41,25 @@ metadata-files:
   - "materials/_chapters.yml"
 
 book:
-  favicon: "_extensions/cambiotraining/crit-format/img/university-of-cambridge-favicon.ico"
+  favicon: "_extensions/ilrigenomics/ilri-format/img/ilriGenomicsBioinformatics_flavicon.ico"
   page-footer: 
     center: |
       Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 
       ![](https://creativecommons.org/images/deed/cc_icon_black_x2.png){width=25px} 
-      Cambridge Research Informatics Training
+      ILRI Genomics Platform Bioinformatics Courses
   search:
     location: sidebar
   bread-crumbs: false
   page-navigation: true
   navbar:
     pinned: true
-    title: "Course Development Guidelines"
-    logo: "_extensions/cambiotraining/crit-format/img/university_crest_reversed.png"
+    title: "Course Development Template Guidelines"
+    logo: "_extensions/ilrigenomics/ilri-format/img/ilri_cgiar_logo.png"
     right:
-      - text: "{{< iconify fa6-brands github size=lg title='CRIT GitHub' >}}"
-        href: https://github.com/cambiotraining/
-      - text: "{{< iconify fa6-brands bluesky size=lg title='CRIT Bluesky' >}}"
-        href: https://bsky.app/profile/bioinfocambs.bsky.social
-      - text: "{{< iconify fa6-brands mastodon size=lg title='CRIT Mastodon' >}}"
-        href: https://genomic.social/@BioInfoCambs
-      - text: "{{< iconify mdi web size=lg title='CRIT Website' >}}"
-        href: https://bioinfotraining.bio.cam.ac.uk/
+      - text: "{{< iconify fa6-brands github size=lg title='ILRI Genomics Platform GitHub' >}}"
+        href: https://github.com/ILRI-Genomics-Platform/
+      - text: "{{< iconify mdi web size=lg title='ILRI Genomics Platform Website' >}}"
+        href: https://www.ilri.org/research/facilities/genomics-platform/
   chapters:
     - part: "Welcome"
       chapters: 
